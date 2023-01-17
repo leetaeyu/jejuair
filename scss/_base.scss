@@ -1,0 +1,32 @@
+//변수선언 글자색상, 반응형
+$wh: #fff;
+$bk: #000;
+$dk: #222;
+$lt-gray: #999;
+$dk-gray: #666;
+
+
+//flex
+@mixin flexWrap($justify: space-between, $gap: 50px, $align:center) {
+    display: flex;
+    justify-content: $justify;
+    gap:gap;
+    align-items: $align;
+}
+
+@mixin pos ($pos:absolute, $top:null, $bottom: null, $left:null, $right: null, $z-index: null) {
+    position: $pos;
+    top:$top;
+    bottom: $bottom;
+    left:$left;
+    right:$right;
+    z-index: $z-index;
+}
+
+//중앙정렬
+
+@mixin center($width) {
+    width: 100%;
+    max-width: $width;
+    margin: auto;
+}
