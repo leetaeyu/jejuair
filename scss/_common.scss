@@ -32,6 +32,7 @@ button {background-color: transparent; border: 0; cursor: pointer;}
 
 //header
 #rg_hd {
+    display: none;
     @include pos($pos: fixed, $left:0, $top:0, $z-index:100);
     width: 100%;
     height: 10rem;
@@ -41,6 +42,7 @@ button {background-color: transparent; border: 0; cursor: pointer;}
 
 //footer
 #rg_ft {
+    display: none;
     @include pos ($pos: fixed, $left:0, $bottom:0, $z-index:100);
     width: 100%;
     height: 4rem;

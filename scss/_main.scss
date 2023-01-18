@@ -1,0 +1,123 @@
+.section {
+    background-size: 120% auto; 
+    background-position: center center; 
+    background-repeat: no-repeat;
+    transition: background 2s 0.3s;
+    &.sec_what {background-image: url('../images/main1.png');}
+    &.sec_where {background-image: url('../images/main2.png');}
+    &.sec_how {background-image: url('../images/main3.png');}
+    &.sec_bbs {background-image: url('../images/main4.png');}
+    &.sec_zzz {background-image: url('../images/main5.png');}
+    &.sec_what.fp-completely, &.sec_bbs.fp-completely, &.sec_where.fp-completely , &.sec_how.fp-completely, &.sec_zzz.fp-completely {
+        background-size: 105% auto;
+    } 
+}
+
+// 풀페이지 커스터마이징
+#fp-nav  {
+    display: none;
+    &.fp-left {
+        left: 5rem;
+    }
+    ul li { 
+       width: 1.4rem; 
+       height: 4.2rem; 
+       margin: 0; 
+       a { 
+           width: 10rem; 
+           height: 100%;
+           &::before, &:after {
+               content: ''; 
+               position: absolute; 
+               left: 0.7rem; 
+               width: 0.1rem; 
+               height: 1.8rem; 
+               background-color: $dk-gray; 
+               opacity: 0.3;
+           }
+           &::before {
+               top:0;
+           }
+           &::after {
+               bottom:0;
+           }
+           &.active:before, &:active::after {
+               height: 1.4rem;
+           }
+           span { @include pos($pos:absolute, $left: 0.4rem, $top:1.8rem);
+               width: 0.6rem; 
+               height: 0.6rem; 
+               margin: 0; 
+               background-color: $dk-gray; 
+               opacity: 0.3;
+           }
+           &.active span {
+               left: 0; 
+               top: 1.4rem; 
+               width: 1.4rem; 
+               height: 1.4rem; 
+               margin: 0; 
+               opacity: 1;
+           }
+           &.active ~ .fp-tooltip { opacity: 1; } 
+       }
+       &:hover {
+           a {
+               &:before, &:active::before, &::after, &:active::after {
+                   height: 1.4rem;
+               }
+               span, &.active span {
+                   left: 0; 
+                   top: 1.4rem; 
+                   width: 1.4rem; 
+                   height: 1.4rem; 
+                   margin: 0; 
+                   opacity: 1;
+               }
+           }
+       }
+       .fp-tooltip { 
+           position: absolute; 
+           top: 0; 
+           left: 2.4rem; 
+           width: auto; 
+           line-height: 4.2rem; 
+           color: $dk-gray; 
+           font-family: 'Noto Sans KR', sans-serif; 
+           font-size: 2rem; 
+           opacity: 0.3; 
+       }
+       &:first-child a:before, &:last-child a:after {
+           display: none;
+       }
+   } 
+}
+
+// 3번째 세션이 표시될 때
+// .fp-viewing-how #fp-nav ul li  {
+//     a {
+//         &:before, &:after, span {
+//             background-color: $dk-gray;
+
+//         }
+//         &.active span {
+//             background-color: $or;
+//         }
+//         &.active ~ .fp-tooltip {
+//             color: $or;
+//         }
+//     }
+//     .fp-tooltip {
+//         color: $dk-gray;
+//     }
+//     &:hover  {
+//         a {
+//             span {
+//                 background-color: $or;
+//             }
+//         }
+//         .fp-tooltip {
+//             color: $or;
+//         }
+//     }
+// }
