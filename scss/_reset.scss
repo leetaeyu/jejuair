@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+*::before, *::after {box-sizing: border-box;}
+html {font-size: 10px;}
+body {
+    background-color: $wh; color:#000; font-family: 'pretendard' sans-serif; font-size: 1.6rem; line-height: 1.6;
+    &.hidden {overflow: hidden;}
+}
+h1, h2, h3, h4, h5, h6 {font-family:  'pretendard' sans-serif;} //그누보드 때문에
+ol, ul {list-style-type: none;}
+a {color:$dk-gray; text-decoration: none;}
+p {margin: 1em 0;}
+img {border: 0; vertical-align: middle;}
+input, select, textarea, button {font-size: 1.6rem; font-family:  'pretendard' sans-serif; color:$dk-gray}
+button {background-color: transparent; border: 0; cursor: pointer;}
+
+//공용클래스
+.wrap {max-width: 140rem; margin: auto;}
+.clearfix:after {display: block; clear: both; content: '';}
+.blind {@include pos($pos:absolute, $left: -9999rem);}
+.serif {font-family: 'Nanum Myeongjo', serif;}
+
+//skip
+#skip {
+    a {
+        @include pos($pos:fixed, $left:0, $top:-10rem, $z-index:1000); width: 100%; line-height: 4.4rem; background-color: $wh; text-align: center; transition: 0.3s;
+        &:focus {top: 0;}
+    }
+}

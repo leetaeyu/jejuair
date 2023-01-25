@@ -3,16 +3,15 @@
     background-position: center center; 
     background-repeat: no-repeat;
     transition: background 2s 0.3s;
-    &.sec_what {background-image: url('../images/main1.png');}
+    &.rsv_container {background-image: url('../images/main1.png');}
     &.sec_where {background-image: url('../images/main2.png');}
     &.sec_how {background-image: url('../images/main3.png');}
     &.sec_bbs {background-image: url('../images/main4.png');}
     &.sec_zzz {background-image: url('../images/main5.png');}
-    &.sec_what.fp-completely, &.sec_bbs.fp-completely, &.sec_where.fp-completely , &.sec_how.fp-completely, &.sec_zzz.fp-completely {
+    &.rsv_container.fp-completely, &.sec_bbs.fp-completely, &.sec_where.fp-completely , &.sec_how.fp-completely, &.sec_zzz.fp-completely {
         background-size: 105% auto;
     } 
 }
-
 // 풀페이지 커스터마이징
 #fp-nav  {
     display: none;
@@ -60,12 +59,12 @@
                opacity: 1;
            }
            &.active ~ .fp-tooltip { opacity: 1; } 
-       }
+        }
        &:hover {
            a {
                &:before, &:active::before, &::after, &:active::after {
                    height: 1.4rem;
-               }
+                }
                span, &.active span {
                    left: 0; 
                    top: 1.4rem; 
@@ -73,9 +72,9 @@
                    height: 1.4rem; 
                    margin: 0; 
                    opacity: 1;
-               }
-           }
-       }
+                }
+            }
+        }
        .fp-tooltip { 
            position: absolute; 
            top: 0; 
@@ -86,38 +85,135 @@
            font-family: 'Noto Sans KR', sans-serif; 
            font-size: 2rem; 
            opacity: 0.3; 
-       }
+        }
        &:first-child a:before, &:last-child a:after {
            display: none;
-       }
-   } 
+        }
+    } 
 }
 
-// 3번째 세션이 표시될 때
-// .fp-viewing-how #fp-nav ul li  {
-//     a {
-//         &:before, &:after, span {
-//             background-color: $dk-gray;
-
-//         }
-//         &.active span {
-//             background-color: $or;
-//         }
-//         &.active ~ .fp-tooltip {
-//             color: $or;
-//         }
-//     }
-//     .fp-tooltip {
-//         color: $dk-gray;
-//     }
-//     &:hover  {
-//         a {
-//             span {
-//                 background-color: $or;
-//             }
-//         }
-//         .fp-tooltip {
-//             color: $or;
-//         }
-//     }
-// }
+.rsv_container {
+    .rsv_wrap {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: $wh;
+        .rsv_bigbox {
+            position: absolute;
+            right: 31rem;
+            top:8rem;
+            width: 40rem;
+            background-color: #353A47;
+            border-radius: 1rem 0 0 1rem;
+            .box1 {
+                display: flex;
+                justify-content: center;
+                padding: 1.5rem 0;
+                >li {
+                    padding: 0.5rem 4rem;
+                    margin-right: 3rem;
+                    background-color: #84B082;
+                    border-radius: 2.2rem;
+                    &:nth-child(1) {
+                        position: relative;
+                        left: 3rem;
+                        padding: 0.5rem 3rem;
+                        margin-right: 0;
+                        border: 0.1rem solid transparent;
+                        background-color: $ma_bg;
+                    }
+                    >button {
+                        color: $wh;
+                        &:hover {
+                            border-bottom: 0.1rem solid #ddd;
+                        }
+                    }
+                }
+            }
+            .box2 {
+                max-width: 90%;
+                margin: 0 auto;
+                padding-bottom: 1.5rem;
+                // padding: 4rem;
+                border-radius: 1rem;
+                background-color: $wh;
+                .item1 {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1.5rem;
+                    padding: 2.5rem 0;
+                    >li {
+                        >button {
+                            font-size: 1.5rem;
+                            &:hover {
+                                font-weight: 600;
+                                border-bottom: 0.2rem solid $ma_bg;
+                            }
+                        }
+                    }
+                }
+                .item2 {
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-bottom: 5rem;
+                    >li {
+                        &.rotate {
+                            width: 5rem;
+                            height: 5rem;
+                            >button {
+                                width: 100%;
+                                height: 100%;
+                                background-image: url('../images/booking__swap--disabled.svg');
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                                background-size: 100%;
+                            }
+                        }
+                        >button {
+                            width: 5rem;
+                            >span {
+                                font-size: 2.2rem;
+                                font-weight: 600;
+                                display: block;
+                            }
+                            .item2_sp {
+                                font-size: 1.5rem;
+                                font-weight: inherit;
+                            }
+                        }
+                    } 
+                }
+                .item3 {
+                    position: relative;
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 2rem 0;
+                    color:$bk;
+                    border-top: 0.1rem solid $lt-gray;
+                    text-align: center;
+                    // background-color: #84B082;
+                    &::before {
+                        position: absolute;
+                        top:50%;
+                        left: 6rem;
+                        width: 3rem;
+                        height: 3rem;
+                        background-image: url('../images/quickbooking__calendar.svg');
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        transform: translateY(-50%);
+                        content: '';
+                    }
+                    &:hover {
+                        border: 0.1rem solid $ma_bg;
+                    }
+                }
+            }
+            .box3 {}
+            .box4 {}
+            .box5 {}
+            .box6 {}
+        }
+    }
+}

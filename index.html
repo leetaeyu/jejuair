@@ -11,208 +11,197 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-1.12.3.min.js"></script>
     <script src="js/fullpage.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/main.js"></script>
 </head>
-<body class="rg-main">
+<body class="jeju_main">
     <!-- skip -->
     <div id="skip">
-        <a href="#rg_main_container">본문 바로가기</a>
-        <a href="#rg_gnb">주 메뉴 바로가기</a>
-        <a href="#rg_lnb">서브 메뉴 바로가기</a>
+        <a href="#jeju_main_container">본문 바로가기</a>
+        <a href="#jeju_gnb">주 메뉴 바로가기</a>
+        <a href="#jeju_lnb">서브 메뉴 바로가기</a>
     </div>
     <!-- header -->
-    <header id="rg_hd">
-        <h1 class="rg_logo"><a href="index.html"><span class="blind">제주항공</span></a></h1>
-        <div class="gnb_util_wrap">
-            <h2 class="blind">주 메뉴</h3>
-            <nav id="rg_gnb">
-                <ul>
-                    <li class="depth1">
-                        <button>예매</button>
-                        <div class="depth2_box">
-                            <div class="depth2_flexbox">
-                                <h3>구매안내</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">국내선</li>
-                                    <li class="item">국제선</li>
-                                    <li class="item">사전 좌석 배정</li>
-                                    <li class="item">좌석 승급</li>
-                                    <li class="item">유료 부가상품</li>
-                                    <li class="item">온라인 결제 안내</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>변경 및 환불 안내</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">항공권 변경</li>
-                                    <li class="item">항공권 환불</li>
-                                    <li class="item">예약부도위약금</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>환승 상품</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">환승 전용 내항기</li>
-                                    <li class="item">Rail & Fly</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>빠른 메뉴</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">항공권 예매</li>
-                                    <li class="item">예약 조회</li>
-                                    <li class="item">체크인</li>
-                                    <li class="item">항공편 현황</li>
-                                    <li class="item">기내 면세점 새창열기</li>
-                                    <li class="item">기업 출장 여행</li>
-                                    <li class="item">이벤트</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="depth1">
-                        <button>공항</button>
-                        <div class="depth2_box">
-                            <div class="depth2_flexbox">
-                                <h3>수하물</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">수하물 안내</li>
-                                    <li class="item">운송 제한 물품</li>
-                                    <li class="item">휴대 수하물</li>
-                                    <li class="item">위탁 수하물</li>
-                                    <li class="item">지연, 파손 및 유실물</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>탑승 절차</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">탑승 절차 안내</li>
-                                    <li class="item">SkyPriority</li>
-                                    <li class="item">출입국 규정 정보</li>
-                                </ul>
-                            </div>
-
-                            <div class="depth2_flexbox">
-                                <h3>도움이 필요한 승객</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">한가족 서비스</li>
-                                    <li class="item">유아 동반 승객</li>
-                                    <li class="item">혼자 여행하는 어린이</li>
-                                    <li class="item">몸이 불편한 승객</li>
-                                    <li class="item">임신 중인 승객</li>
-                                    <li class="item">반려동물 동반 승객</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>빠른 메뉴</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">항공권 예매</li>
-                                    <li class="item">예약 조회</li>
-                                    <li class="item">체크인</li>
-                                    <li class="item">항공편 현황</li>
-                                    <li class="item">기내 면세점 새창열기</li>
-                                    <li class="item">기업 출장 여행</li>
-                                    <li class="item">이벤트</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="depth1">
-                        <button>기내</button>
-                        <div class="depth2_box">
-                            <div class="depth2_flexbox">
-                                <h3>클래스별 서비스</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">일등석</li>
-                                    <li class="item">프레스티지석</li>
-                                    <li class="item">일반석</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>기내 서비스</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">서비스 순서</li>
-                                    <li class="item">기내식</li>
-                                    <li class="item">기내 면세품</li>
-                                    <li class="item">기내 여행 가이드</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>항공기 안내</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">보잉 787</li>
-                                    <li class="item">보잉 777</li>
-                                    <li class="item">보잉 747</li>
-                                    <li class="item">보잉 737</li>
-                                    <li class="item">에어버스 A380</li>
-                                    <li class="item">에어버스 A330</li>
-                                    <li class="item">에어버스 A321</li>
-                                    <li class="item">에어버스 A220</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>빠른 메뉴</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">항공권 예매</li>
-                                    <li class="item">예약 조회</li>
-                                    <li class="item">체크인</li>
-                                    <li class="item">항공편 현황</li>
-                                    <li class="item">기내 면세점 새창열기</li>
-                                    <li class="item">기업 출장 여행</li>
-                                    <li class="item">이벤트</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="depth1">
-                        <button>제주패스</button>
-                        <div class="depth2_box">
-                            <div class="depth2_flexbox">
-                                <h3>제주패스 소개</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">회원 혜택</li>
-                                    <li class="item">가족 마일리지</li>
-                                    <li class="item">제휴사 할인</li>
-                                    <li class="item">공동 혜택</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>마일리지 적립</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">제주항공</li>
-                                    <li class="item">신용카드</li>
-                                    <li class="item">여행과 라이프</li>
-                                    <li class="item">제휴 항공사</li>
-                                    <li class="item">탑승 후 적립 안내</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>마일리지 사용</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">제주항공 보너스</li>
-                                    <li class="item">제휴 항공사 보너스</li>
-                                    <li class="item">보너스 좌석 상황 보기</li>
-                                </ul>
-                            </div>
-                            <div class="depth2_flexbox">
-                                <h3>빠른 메뉴</h3>
-                                <ul class="depth2_list">
-                                    <li class="item">항공권 예매</li>
-                                    <li class="item">예약 조회</li>
-                                    <li class="item">체크인</li>
-                                    <li class="item">항공편 현황</li>
-                                    <li class="item">기내 면세점 새창열기</li>
-                                    <li class="item">기업 출장 여행</li>
-                                    <li class="item">이벤트</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <h2 class="blind">마이페이지</h3>
-            <div class="util_wrap">
+    <header id="jeju_hd">
+        <div class="hd_container">
+            <div class="hd_wrap">
+                <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="제주항공 로고"><span class="blind">제주항공</span></a></h1>
+                <nav id="jeju_gnb">
+                    <h2 class="blind">주 메뉴</h3>
+                    <ul>
+                        <li class="pc_depth1">
+                            <button class="button1">예매</button>
+                        </li>
+                        <li class="pc_depth1">
+                            <button class="button2">공항</button>
+                        </li>
+                        <li class="pc_depth1">
+                            <button class="button3">기내</button>
+                        </li>
+                        <li class="pc_depth1">
+                            <button class="button4">스카이패스</button>
+                        </li>
+                    </ul>
+                    <div class="pc_depth2_box depth2_box1">
+                        <ul class="pc_depth2">
+                            <li class="blind">공백</li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_1">
+                            <li>구매 안내</li>
+                            <li><a href="#n">국내선</a></li>
+                            <li><a href="#n">국제선</a></li>
+                            <li><a href="#n">사전 좌석 배정</a></li>
+                            <li><a href="#n">좌석 승급</a></li>
+                            <li><a href="#n">유료 부가상품</a></li>
+                            <li><a href="#n">온라인 결제 안내</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_2">
+                            <li>변경 및 환불 안내</li>
+                            <li><a href="#n">항공권 변경</a></li>
+                            <li><a href="#n">항공권 환불</a></li>
+                            <li><a href="#n">예약부도위약금</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_3">
+                            <li>환승 상품</li>
+                            <li><a href="#n">환승 전용 내항기</a></li>
+                            <li><a href="#n">Rail & Fly</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_4">
+                            <li>빠른 메뉴</li>
+                            <li><a href="#n">항공권 예매</a></li>
+                            <li><a href="#n">예약 조회</a></li>
+                            <li><a href="#n">체크인</a></li>
+                            <li><a href="#n">항공편 현황</a></li>
+                            <li><a href="#n">기내 면세점 새창열기</a></li>
+                            <li><a href="#n">기업 출장 여행</a></li>
+                            <li><a href="#n">이벤트</a></li>
+                        </ul>
+                        <ul class="pc_depth2">
+                            <li class="blind">공백</li>
+                        </ul>
+                    </div>
+                    <div class="pc_depth2_box depth2_box2">
+                        <ul class="pc_depth2">
+                            <li class="blind">공백</li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_1">
+                            <li>수하물</li>
+                            <li><a href="#n">수하물 안내</a></li>
+                            <li><a href="#n">운송 제한 물품</a></li>
+                            <li><a href="#n">휴대 수하물</a></li>
+                            <li><a href="#n">위탁 수하물</a></li>
+                            <li><a href="#n">지연, 파손 및 유실물</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_2">
+                            <li>체크인</li>
+                            <li><a href="#n">사전 체크인</a></li>
+                            <li><a href="#n">공항 체크인</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_3">
+                            <li>도움이 필요한 승객</li>
+                            <li><a href="#n">한가족 서비스</a></li>
+                            <li><a href="#n">유아 동반 승객</a></li>
+                            <li><a href="#n">혼자 여행하는 어린이</a></li>
+                            <li><a href="#n">몸이 불편한 승객</a></li>
+                            <li><a href="#n">임신 중인 승객</a></li>
+                            <li><a href="#n">반려동물 동반 승객</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_4">
+                            <li>빠른 메뉴</li>
+                            <li><a href="#n">항공권 예매</a></li>
+                            <li><a href="#n">예약 조회</a></li>
+                            <li><a href="#n">체크인</a></li>
+                            <li><a href="#n">항공편 현황</a></li>
+                            <li><a href="#n">기내 면세점 새창열기</a></li>
+                            <li><a href="#n">기업 출장 여행</a></li>
+                            <li><a href="#n">이벤트</a></li>
+                        </ul>
+                        <ul class="pc_depth2">
+                            <li class="blind">공백</li>
+                        </ul>
+                    </div>
+                    <div class="pc_depth2_box depth2_box3">
+                        <ul class="pc_depth2">
+                            <li class="blind">공백</li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_1">
+                            <li>클래스별 서비스</li>
+                            <li><a href="#n">일등석</a></li>
+                            <li><a href="#n">프레스티지석</a></li>
+                            <li><a href="#n">일반석</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_2">
+                            <li>기내 서비스</li>
+                            <li><a href="#n">서비스 순서</a></li>
+                            <li><a href="#n">기내식</a></li>
+                            <li><a href="#n">기내 면세품</a></li>
+                            <li><a href="#n">기내 여행 가이드</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_3">
+                            <li>항공기 안내</li>
+                            <li><a href="#n">보잉 787</a></li>
+                            <li><a href="#n">보잉 777</a></li>
+                            <li><a href="#n">보잉 747</a></li>
+                            <li><a href="#n">보잉 737</a></li>
+                            <li><a href="#n">에어버스 A380</a></li>
+                            <li><a href="#n">에어버스 A330</a></li>
+                            <li><a href="#n">에어버스 A321</a></li>
+                            <li><a href="#n">에어버스 A220</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_4">
+                            <li>빠른 메뉴</li>
+                            <li><a href="#n">항공권 예매</a></li>
+                            <li><a href="#n">예약 조회</a></li>
+                            <li><a href="#n">체크인</a></li>
+                            <li><a href="#n">항공편 현황</a></li>
+                            <li><a href="#n">기내 면세점 새창열기</a></li>
+                            <li><a href="#n">기업 출장 여행</a></li>
+                            <li><a href="#n">이벤트</a></li>
+                        </ul>
+                        <ul class="pc_depth2">
+                            <li class="blind">공백</li>
+                        </ul>
+                    </div>
+                    <div class="pc_depth2_box depth2_box4">
+                        <ul class="pc_depth2">
+                            <li class="blind">공백</li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_1">
+                            <li>스카이패스 소개</li>
+                            <li><a href="#n">회원 혜택</a></li>
+                            <li><a href="#n">가족 마일리지</a></li>
+                            <li><a href="#n">제휴사 할인</a></li>
+                            <li><a href="#n">스카이팀 공동 혜택</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_2">
+                            <li>마일리지 적립</li>
+                            <li><a href="#n">대한항공</a></li>
+                            <li><a href="#n">신용카드</a></li>
+                            <li><a href="#n">여행과 라이프</a></li>
+                            <li><a href="#n">제휴 항공사</a></li>
+                            <li><a href="#n">탑승 후 적립 안내</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_3">
+                            <li>마일리지 사용</li>
+                            <li><a href="#n">대한항공 보너스</a></li>
+                            <li><a href="#n">제휴 항공사 보너스</a></li>
+                            <li><a href="#n">보너스 좌석 상황 보기</a></li>
+                        </ul>
+                        <ul class="pc_depth2 pc_depth2_4">
+                            <li>빠른 메뉴</li>
+                            <li><a href="#n">항공권 예매</a></li>
+                            <li><a href="#n">예약 조회</a></li>
+                            <li><a href="#n">체크인</a></li>
+                            <li><a href="#n">항공편 현황</a></li>
+                            <li><a href="#n">기내 면세점 새창열기</a></li>
+                            <li><a href="#n">기업 출장 여행</a></li>
+                            <li><a href="#n">이벤트</a></li>
+                        </ul>
+                        <ul class="pc_depth2">
+                            <li class="blind">공백</li>
+                        </ul>
+                    </div>
+                </nav>
                 <nav class="hd_util">
                     <a href="#n"><span class="blind">마이페이지</span></a>
                     <a href="#n"><span class="blind">알림</span></a>
@@ -222,14 +211,42 @@
             </div>
         </div>
     </header>
-    <main id="rg_main_container">
-        <section class="section sec_what">
+
+    <main id="jeju_main_container">
+        <section class="section rsv_container">
             <h2 class="blind">예약하기</h2>
+            <div class="rsv_wrap">
+                <div class="rsv_bigbox">
+                    <ul class="box1">
+                        <li><button>예매</button></li>
+                        <li><button>마일리지 예매</button></li>
+                    </ul>
+                    <div class="box2">
+                        <ul class="item1">
+                            <li><button>왕복</button></li>
+                            <li><button>편도</button></li>
+                        </ul>
+                        <ul class="item2">
+                            <li><button><span>SEL</span><span class="item2_sp">서울</span></button></li>
+                            <li class="rotate"><button></button></li>
+                            <li><button><span>To</span><span class="item2_sp">도착지</span></button></li>
+                        </ul>
+                        <div class="item3">가는 날 ~ 오는 날</div>
+                    </div>
+                    <ul class="box3">
+                        <li><button><span>승객수</span><span>성인 1명</span></button></li>
+                        <li><button><span>좌석등급</span><span>일반석</span></button></li>
+                    </ul>
+                    <div class="box4"><input checked="checked" type="checkbox"><label>가까운 날짜 함께 조회</label></div>
+                    <div class="box5"><span>구매와 동시 승급</span><span>다구간</span></div>
+                    <div class="box6"><button>검색</button></div>
+                </div>
+            </div>
         </section>
         <section class="section sec_where">
             <h2 class="blind"></h2>
         </section>
-        <section class="section sec_how">
+        <section class="section sec_how">     
             <h2 class="blind"></h2>
         </section>
         <section class="section sec_bbs">
@@ -239,7 +256,7 @@
             <h2 class="blind"></h2>
         </section>
     </main>
-    <footer id="rg_ft">
+    <footer id="jeju_ft">
         <h2 class="blind">푸터영역</h2>
     </footer>
 </body>
