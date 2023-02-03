@@ -15,15 +15,214 @@
 
 /* PC부터 1024px~ */
 @media screen and (min-width: 1024px) {
-
+    #jeju_hd{
+        display: block;
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        .hd_container {
+            display: block;
+            border-bottom: 0.1rem solid #ddd;
+            .hd_wrap {
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                height: 7rem;
+                margin: 0 auto;
+                background-color: #fff;
+                .logo {
+                    padding-bottom: 1rem;
+                    padding-left: 1.5rem;
+                    a {
+                        display: block;
+                        width: 15rem;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                #jeju_gnb{
+                    display: block;
+                    width: 80%;
+                    >ul {
+                        display: flex;
+                        justify-content: center;
+                        .pc_depth1 {
+                            >button {
+                                position: relative;
+                                width: 15rem;
+                                padding: 2.2rem 0;
+                                font-size: 1.9rem;
+                                font-weight: 600;
+                                color:#000;
+                                &:hover:after {
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    content: '';
+                                    width: 15rem;
+                                    height: 0.3rem;
+                                    background-color: #ff5000;
+                                }
+                            }
+                        }
+                    }
+                    .pc_depth2_box {
+                        position: absolute;
+                        top:7rem;
+                        left: 0;
+                        display: flex;
+                        width: 100%;
+                        background-color: #fff;
+                        opacity: 1;
+                        transition: 1s;
+                        z-index: -1;
+                        transform: translateY(-100rem);
+                        &.click {
+                            transform: translateY(0);
+                        }
+                        .pc_depth2 {
+                            width: 16.6666%;
+                            border-right: 0.1rem solid #ddd;
+                            text-align: center;
+                            li {
+                                padding: 1rem 0;
+                                font-size: 1.7rem;
+                                &:nth-child(1) {
+                                    padding-top: 2rem;
+                                    font-weight: 700;
+                                }
+                                a {
+                                    display: block;
+                                    &:hover {
+                                        scale: 1.1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .hd_util {
+                    position: relative;
+                    right: inherit;
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: initial;
+                    width: 20rem;
+                    margin-right: 1.5rem;
+                    a {
+                        display: block;
+                        width: calc(100% / 4);
+                        height: 3rem;
+                        transition: 0.3s;
+                        &:nth-child(1) {background: url('../images/util_login.png') center center / cover no-repeat;}   
+                        &:nth-child(2) {background: url('../images/util_alram.png') center center / cover no-repeat;}   
+                        &:nth-child(3) {background: url('../images/util_cart.png') center center / cover no-repeat;}   
+                        &:nth-child(4) {background: url('../images/util_search.png') center center / cover no-repeat;}
+                        &:hover {
+                            scale: 1.1;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+    #jeju_hd_mo {
+        display: none;
+    }
 }
 
 /* 작은 PC 1024px~1279px */
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
-
 }
 
 /* PC 1280px~ */
 @media screen and (min-width: 1280px) {
-
+    .ft_container {
+        .ft_wrap {
+            .info {
+                width: inherit;
+                margin: inherit;
+            }
+            .info1 {
+                >ul {
+                    li {
+                        padding: 0 2rem 1rem 0rem;
+                        a {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+            .info2 {
+                padding-top: 1rem;
+                >ul {
+                    li {
+                        padding: 1rem 2rem 1rem 0rem;
+                        &::after {
+                            position: absolute;
+                            top:1.6rem;
+                            right: 1rem;
+                            width: 0.1rem;
+                            height: 1.5rem;
+                            background-color: $wh;
+                            content: '';
+                        }
+                        &:last-child::after {
+                            display: none;
+                        }
+                        a {
+                            font-size: 1.6rem; 
+                        }
+                    }
+                }
+            }
+            .info3 {
+                display: block;
+                padding: 1rem 0;
+                >div {
+                    font-weight: 600;
+                }
+                ul {
+                    display: flex;
+                    li {
+                        position: relative;
+                        padding: 0 2rem 1rem 0rem;
+                        &::after {
+                            position: absolute;
+                            top:0.6rem;
+                            right: 1rem;
+                            width: 0.1rem;
+                            height: 1.5rem;
+                            background-color: $wh;
+                            content: '';
+                        }
+                        &:last-child::after {
+                            display: none;
+                        }
+                        a {
+                            font-size: 1.5rem;
+                            color:$wh;
+                        }
+                    }
+                }
+            }
+            .info4 {
+                padding: 0;
+                font-size: 1.6rem;
+            }
+            .info5 {
+                padding-top: 1rem;
+                font-size: 1.6rem;
+                >ul {
+                    li {padding: 0;}
+                }
+            }
+        }
+    }
 }
