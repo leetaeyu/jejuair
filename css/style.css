@@ -84,19 +84,30 @@ button {
   font-family: "Nanum Myeongjo", serif;
 }
 
-#skip a {
+#skip {
   position: fixed;
-  top: -10rem;
   left: 0;
-  z-index: 1000;
+  top: 0;
   width: 100%;
-  line-height: 4.4rem;
-  background-color: #fff;
-  text-align: center;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  z-index: 9999;
 }
-#skip a:focus {
+#skip a {
+  position: absolute;
+  left: 0;
+  top: -4.4rem;
+  display: block; /*생략 가능*/
+  width: 100%;
+  font-size: 1.6rem;
+  color: #000;
+  background-color: #fff;
+  line-height: 44px;
+  text-align: center;
+  -webkit-transition-property: top;
+  transition-property: top;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+#skip a:focus, #skip a:active {
   top: 0;
 }
 
@@ -113,7 +124,7 @@ body.hidden {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 9999;
+  z-index: 9998;
 }
 #jeju_hd_mo .hd_container {
   display: block;
@@ -325,6 +336,19 @@ body.hidden {
 #jeju_hd_mo .hd_container .hd_util a:nth-child(3) {
   background: url("../images/util_cart.png") center center/cover no-repeat;
 }
+#jeju_hd_mo .hd_container .hd_util a.true {
+  position: relative;
+}
+#jeju_hd_mo .hd_container .hd_util a.true::before {
+  position: absolute;
+  top: 0.4rem;
+  right: 0rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #000;
+  content: "";
+}
 #jeju_hd_mo .hd_container .gnb_open {
   position: absolute;
   right: 2rem;
@@ -452,7 +476,7 @@ body.hidden {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 9998;
   }
   #jeju_hd .hd_container {
     display: block;
@@ -591,6 +615,19 @@ body.hidden {
   }
   #jeju_hd .hd_container .hd_wrap .hd_util a:hover {
     scale: 1.1;
+  }
+  #jeju_hd .hd_container .hd_wrap .hd_util a.true {
+    position: relative;
+  }
+  #jeju_hd .hd_container .hd_wrap .hd_util a.true::before {
+    position: absolute;
+    top: 0.4rem;
+    right: 0rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #000;
+    content: "";
   }
   #jeju_hd_mo {
     display: none;

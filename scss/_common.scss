@@ -11,7 +11,7 @@ body {
     top:0;
     left: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 9998;
     .hd_container {
         display: block;
         border-bottom: 0.1rem solid #ddd;
@@ -104,10 +104,9 @@ body {
                         li {
                             width: 6rem;
                             text-align: center;
-                            &:nth-child(3) {
-                            }
                             a {
                                 img {width: 100%;}
+
                             }
                             span {
                                 display: block;
@@ -184,7 +183,21 @@ body {
                 height: 3rem;
                 &:nth-child(1) {background: url('../images/util_login.png') center center / cover no-repeat;}   
                 &:nth-child(2) {background: url('../images/util_alram.png') center center / cover no-repeat;}   
-                &:nth-child(3) {background: url('../images/util_cart.png') center center / cover no-repeat;}   
+                &:nth-child(3) {background: url('../images/util_cart.png') center center / cover no-repeat;}
+                &.true {
+                    position: relative;
+                    &::before {
+                        position: absolute;
+                        top:0.4rem;
+                        right: 0rem;
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        border-radius: 50%;
+                        background-color: $bk;
+                        content: '';
+                    }
+                }
+
             }
         }
         .gnb_open {

@@ -25,8 +25,26 @@ button {background-color: transparent; border: 0; cursor: pointer;}
 
 //skip
 #skip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
     a {
-        @include pos($pos:fixed, $left:0, $top:-10rem, $z-index:1000); width: 100%; line-height: 4.4rem; background-color: $wh; text-align: center; transition: 0.3s;
-        &:focus {top: 0;}
+        position: absolute;
+        left: 0;
+        top: -4.4rem;
+        display: block; /*생략 가능*/
+        width: 100%;
+        font-size: 1.6rem;
+        color: $bk;
+        background-color: $wh;
+        line-height: 44px;
+        text-align: center;
+        transition-property: top;
+        transition-duration: 0.3s;
+        &:focus, &:active {
+            top:0;
+        }
     }
 }
