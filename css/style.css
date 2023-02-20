@@ -154,10 +154,10 @@ body.hidden {
 #jeju_hd_mo .hd_container .hd_wrap .logo a img {
   width: 100%;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb {
   width: 80%;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map {
   position: fixed;
   right: 200rem;
   top: 0;
@@ -169,10 +169,10 @@ body.hidden {
   background-color: #fff;
   z-index: 9999;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map.active {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map.active {
   right: 0;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,23 +185,23 @@ body.hidden {
   height: 7rem;
   padding: 1rem;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header > h2 {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header > h2 {
   padding-bottom: 1rem;
   padding-left: 1.5rem;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header > h2 a {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header > h2 a {
   display: block;
   width: 12rem;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header > h2 a img {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header > h2 a img {
   width: 100%;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header .gnb_close {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header .gnb_close {
   position: relative;
   width: 4rem;
   height: 4rem;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header .gnb_close .line {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header .gnb_close .line {
   position: absolute;
   left: 1rem;
   top: 50%;
@@ -214,18 +214,18 @@ body.hidden {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header .gnb_close .line1 {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header .gnb_close .line1 {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header .gnb_close .line2 {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header .gnb_close .line2 {
   opacity: 0;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_header .gnb_close .line3 {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_header .gnb_close .line3 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_util {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_util {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,22 +236,22 @@ body.hidden {
   margin: 0 auto;
   padding-bottom: 2rem;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_util li {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_util li {
   width: 6rem;
   text-align: center;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_util li a img {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_util li a img {
   width: 100%;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .map_util li span {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .map_util li span {
   display: block;
   font-size: 1.4rem;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox {
   padding-top: 2rem;
   border-top: 0.1rem solid #999;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1 {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,14 +262,14 @@ body.hidden {
   padding-top: 2rem;
   padding-left: 2rem;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1 > button {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1 > button {
   width: 15rem;
   font-size: 1.9rem;
   font-weight: 600;
   color: #000;
   text-align: left;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1 > button:after {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1 > button:after {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -281,26 +281,26 @@ body.hidden {
           transform: rotate(135deg);
   content: "";
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1.active > button:after {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1.active > button:after {
   margin-top: 1rem;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box {
   display: none;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box .mo_depth2 li {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box .mo_depth2 li {
   padding: 0.3rem 0;
   font-size: 1.7rem;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box .mo_depth2 li:nth-child(1) {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box .mo_depth2 li:nth-child(1) {
   padding-top: 1rem;
   font-weight: 700;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box .mo_depth2 li.depth2_no {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box .mo_depth2 li.depth2_no {
   padding-top: 0;
 }
-#jeju_hd_mo .hd_container .hd_wrap #jeju_mo_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box .mo_depth2 li a {
+#jeju_hd_mo .hd_container .hd_wrap #jeju_gnb .map .mo_depthbox .mo_depth1 .mo_depth2_box .mo_depth2 li a {
   display: block;
 }
 #jeju_hd_mo .hd_container .hd_util {
