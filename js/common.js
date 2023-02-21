@@ -35,6 +35,11 @@ $(function(){
         $(this).parent().siblings().removeClass("active");
         $(this).parent().toggleClass("active");
     });
-
+    
+    $("a").click(function(){
+        if($(this).attr("href") == "#") {
+            return false;
+        }
+    });
 
 });
